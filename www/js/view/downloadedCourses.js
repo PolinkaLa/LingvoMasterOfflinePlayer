@@ -1,33 +1,18 @@
 function DownloadedRender() {
     this.renderDownloaded = function () {
-        var cour = downloadedCoursesGet.getDownloadedCourses();
-        var body = document.getElementsByTagName('BODY')[0];
-        for (var i = 0; i < cour.length; i++) {
-            var course = document.createElement("DIV");
-            course.style = "text-align: left; margin-left: 5%; margin-right: 5%";
-            body.appendChild(course);
-
-            var img = document.createElement("IMG");
-            img.src = cour[i].img;
-            course.appendChild(img);
-
-            var name = document.createElement("H2");
-            name.innerHTML = cour[i].name;
-            course.appendChild(name);
-
-            var author = document.createElement("H3");
-            author.innerHTML = cour[i].author;
-            course.appendChild(author);
-
-            var button = document.createElement("A");
-            button.href = "../courseMap/courseMap.html";
-            button.innerHTML = "RUN"
-            course.appendChild(button);
+        var course = downloadedCoursesGet.getDownloadedCourses();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseList = "";
+        var courseTemplate = '<div style = "text-align: left; margin-left: 5%; margin-right: 5%"> <img src={{=im}}> <h2>{{=name}}</h2> <h3>{{=author}}</h3> <a href={{=link}}>RUN</a><br><br> </div>';
+        for (var i = 0; i < course.length; i++) {
+            courseList = courseList + renderTemplate(courseTemplate, {im: course[i].img, name: course[i].name, author: course[i].author, link: "../courseMap/courseMap.html"});
         }
+        bodyDiv.innerHTML = courseList;
     }
 };
 
 window.onload = function () {
+    menuRender.renderMenu();
     var downloadedRender = new DownloadedRender();
     downloadedRender.renderDownloaded();   
 }

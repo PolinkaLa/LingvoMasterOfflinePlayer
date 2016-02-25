@@ -1,29 +1,22 @@
 function MapRender () {
     this.renderMap = function () {
         var info = mapGet.getMap();
-        var body = document.getElementsByTagName('BODY')[0];
-
-        var course = document.createElement("DIV");
-        course.style = "text-align: left; margin-left: 5%; margin-right: 5%";
-        body.appendChild(course);
-
-        var name = document.createElement("H2");
-        name.innerHTML = info.name;
-        course.appendChild(name);
-
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseMapTemplate = '<div style = "text-align: left; margin-left: 5%; margin-right: 5%"> <h2>{{=name}}</h2> <div id="lesson"></div></div>';
+        bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});
+        var lessonBlock = document.getElementById('lesson');
+        var lessonBlockTemplate = '<a href={{=link}}> {{=lesson}} </a> <br><br>';
+        var lessonList = "";
         var lessons = info.lesson;
         for (var j = 0; j < lessons.length; j++) {
-            var lesson = document.createElement("A");
-            lesson.href = "../lesson/lesson.html";
-            lesson.innerHTML = lessons[j];
-            course.appendChild(lesson);
-            course.appendChild(document.createElement("BR"))
+            lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j], link: "../lesson/lesson.html"});
         }
-        course.appendChild(document.createElement("BR"))
+        lessonBlock.innerHTML = lessonList;
     }  
 };
 
 window.onload = function () {
+    menuRender.renderMenu();
     var mapRender = new MapRender();
     mapRender.renderMap();   
 }

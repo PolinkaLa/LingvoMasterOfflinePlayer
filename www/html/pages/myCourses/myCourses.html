@@ -4,24 +4,19 @@
         <meta charset="UTF-8">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
         <script type="text/javascript" src="../../../cordova.js"></script>
-        <script type="text/javascript" src="../../../js/Logic/myCourses.js"></script>
-        <script type="text/javascript" src="../../../js/View/myCourses.js"></script>
+        <script type="text/javascript" src="../../../js/renderTemplate.js"></script>
+        <script type="text/javascript" src="../../../js/menuRender.js"></script>
+        <script type="text/javascript" src="../../../js/logic/myCourses.js"></script>
+        <script type="text/javascript" src="../../../js/view/myCourses.js"></script>
         <title>My Courses</title>
     </head>
     <body>
-        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-        <label class="btn-menu" for="hmt">
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-        </label>
-        <ul class="hidden-menu">
-            <li style="margin-top: 10%; text-align: left"><img src="../../../img/company_logo.png" width="50%" height="50%"></li>
-            <li><a href="../myCourses/myCourses.html">Мои курсы</a></li>
-            <li><a href="../downloadedCourses/downloadedCourses.html">Загруженные курсы</a></li>
-        </ul>
+        <div id="menu">
+        </div>
         <header>
             <h1>Мои курсы</h1>
         </header>
+        <div id="bodyOfPage">
+        </div>
     </body>
 </html>
