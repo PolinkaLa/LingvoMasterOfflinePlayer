@@ -2,8 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel=stylesheet href="../../../css/bootstrap.min.css" type="text/css">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
         <script type="text/javascript" src="../../../cordova.js"></script>
+        <script type="text/javascript" src="../../../js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../../js/renderTemplate.js"></script>
         <script type="text/javascript" src="../../../js/menuRender.js"></script>
         <script type="text/javascript" src="../../../js/Logic/test.js"></script>
@@ -13,21 +17,23 @@
     <body>
         <div id="menu">
         </div>
-        <header>
-            <h1>Прохождение <br> теста</h1>
-        </header>
-        <div id="bodyOfPage">
+        <div id="bodyOfPage" style="margin-top:60px">
         </div>
-        <div>
-            <a href = "../courseMap/courseMap.html">
-                <img src="../../../img/back.jpg" width = "100" style = "margin-right: 100px">
-            </a>
-            <a href = "../courseMap/courseMap.html">
-                Stop
-            </a>
-            <a href = "../courseMap/courseMap.html">
-                <img src="../../../img/forth.jpg" width = "100" style = "margin-left: 100px">
-            </a>
-        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html">
+                    <img src="../../../img/back.png" width = "30" style = "margin-right: 0px">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html" class="btn btn-danger btn-md btn-block" style="margin-top: 30px">
+                    Stop
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html">
+                    <img src="../../../img/forth.png" width = "30" style = "margin-left: 10px">
+                </a>
+            </div>
     </body>
 </html>

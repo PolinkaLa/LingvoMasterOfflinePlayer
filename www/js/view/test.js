@@ -4,7 +4,9 @@ function TestRender () {
         var test = testGet.getTest();
 
         var bodyDiv = document.getElementById('bodyOfPage');
-        var testTemplate = '<div style="text-align: left; margin-left: 5%; margin-right: 5%"> <h2>{{=ex}}</h2> </div>';
+        var testTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                '<h3 class="author-style">{{=ex}}</h3>'+
+                            '</div>';
         var exercises = '';
 
         for (var key in test) {
@@ -17,7 +19,7 @@ function TestRender () {
 };
 
 window.onload = function () {
-    menuRender.renderMenu();
+    menuRender.renderMenu("Тест", 15);
     var testRender = new TestRender ();
     testRender.renderTest();
 }

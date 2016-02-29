@@ -3,7 +3,18 @@ function DownloadedRender() {
         var course = downloadedCoursesGet.getDownloadedCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseList = "";
-        var courseTemplate = '<div style = "text-align: left; margin-left: 5%; margin-right: 5%"> <img src={{=im}}> <h2>{{=name}}</h2> <h3>{{=author}}</h3> <a href={{=link}}>RUN</a><br><br> </div>';
+        var courseTemplate = '<div class="body-div" style="margin-right: 5%">'+ 
+                                '<img src={{=im}}>'+
+                                '<div class="row">'+
+                                    '<div class="col-xs-8">'+
+                                        '<h3 class="titl-course">{{=name}}</h3>'+ 
+                                        '<h3 class="author-style">{{=author}}</h3>'+
+                                    '</div>'+ 
+                                    '<div class="col-xs-4">'+
+                                        '<a href={{=link}} class="btn btn-success btn-block" style="margin-top: 20px">RUN</a><br><br>'+
+                                    '</div>'+
+                                '</div>'+ 
+                            '</div>';
         for (var i = 0; i < course.length; i++) {
             courseList = courseList + renderTemplate(courseTemplate, {im: course[i].img, name: course[i].name, author: course[i].author, link: "../courseMap/courseMap.html"});
         }
@@ -12,7 +23,7 @@ function DownloadedRender() {
 };
 
 window.onload = function () {
-    menuRender.renderMenu();
+    menuRender.renderMenu("Загруженные курсы", 0);
     var downloadedRender = new DownloadedRender();
     downloadedRender.renderDownloaded();   
 }

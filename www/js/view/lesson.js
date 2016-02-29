@@ -3,10 +3,12 @@ function LessonRender () {
         lesson = lessonGet.getLesson();
         test = testGet.getTest();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var lessonTemplate = '<div style="text-align: left; margin-left: 5%; margin-right: 5%"> <h2>{{=ex}}</h2> </div>';
+        var lessonTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                '<h3 class="author-style">{{=ex}}</h2>'+
+                            '</div>';
         var exercises = '';
         var tests = '';
-        var testBlock = '<div><a href={{=link}}>{{=test}}</a></div>';
+        var testBlock = '<div class="body-div" style="margin-right: 5%"><a href={{=link}} class="btn btn-primary btn-sm btn-block">{{=test}}</a><br></div>';
 
         for (var key in lesson) {
             exercises = exercises + renderTemplate(lessonTemplate, {ex: lesson[key]});
@@ -20,7 +22,7 @@ function LessonRender () {
 };
 
 window.onload = function () {
-    menuRender.renderMenu();
+    menuRender.renderMenu("Урок", 15);
     var lessonRender = new LessonRender();
     lessonRender.renderLesson();   
 }
