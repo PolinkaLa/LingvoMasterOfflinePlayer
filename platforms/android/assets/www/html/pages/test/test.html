@@ -2,26 +2,38 @@
 <html>
     <head>
         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel=stylesheet href="../../../css/bootstrap.min.css" type="text/css">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
         <script type="text/javascript" src="../../../cordova.js"></script>
+        <script type="text/javascript" src="../../../js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../../js/renderTemplate.js"></script>
+        <script type="text/javascript" src="../../../js/menuRender.js"></script>
         <script type="text/javascript" src="../../../js/Logic/test.js"></script>
         <script type="text/javascript" src="../../../js/View/test.js"></script>
         <title>Test Run</title>
     </head>
-    <body onload="renderTest();">
-        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-        <label class="btn-menu" for="hmt">
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-        </label>
-        <ul class="hidden-menu">
-            <li style="margin-top: 10%; text-align: left"><img src="../../../img/company_logo.png" width="50%" height="50%"></li>
-            <li><a href="../myCourses/myCourses.html">Мои курсы</a></li>
-            <li><a href="../downloadedCourses/downloadedCourses.html">Загруженные курсы</a></li>
-        </ul>
-        <header>
-            <h1>Прохождение <br> теста</h1>
-        </header>
+    <body>
+        <div id="menu">
+        </div>
+        <div id="bodyOfPage" style="margin-top:60px">
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html">
+                    <img src="../../../img/back.png" width = "30" style = "margin-right: 0px">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html" class="btn btn-danger btn-md btn-block" style="margin-top: 30px">
+                    Stop
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href = "../courseMap/courseMap.html">
+                    <img src="../../../img/forth.png" width = "30" style = "margin-left: 10px">
+                </a>
+            </div>
     </body>
 </html>

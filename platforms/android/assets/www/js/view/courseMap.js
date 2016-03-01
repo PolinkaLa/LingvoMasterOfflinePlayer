@@ -1,29 +1,26 @@
 function MapRender () {
     this.renderMap = function () {
-        var info = getMap();
-        var body = document.getElementsByTagName('BODY')[0];
-
-        var course = document.createElement("DIV");
-        course.style = "text-align: left; margin-left: 5%; margin-right: 5%";
-        body.appendChild(course);
-
-        var name = document.createElement("H2");
-        name.innerHTML = info.name;
-        course.appendChild(name);
-
+        var info = mapGet.getMap();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseMapTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                    '<h3 class="titl-course">{{=name}}</h2>'+
+                                    '<div style ="text-align: center; margin-top: 20px" id="lesson">'+
+                                    '</div>'+
+                                '</div>';
+        bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});
+        var lessonBlock = document.getElementById('lesson');
+        var lessonBlockTemplate = '<a href={{=link}} class="btn btn-primary btn-block"> {{=lesson}} </a> <br>';
+        var lessonList = "";
         var lessons = info.lesson;
         for (var j = 0; j < lessons.length; j++) {
-            var lesson = document.createElement("A");
-            lesson.href = "../lesson/lesson.html";
-            lesson.innerHTML = lessons[j];
-            course.appendChild(lesson);
-            course.appendChild(document.createElement("BR"))
+            lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j], link: "../lesson/lesson.html"});
         }
-        course.appendChild(document.createElement("BR"))
+        lessonBlock.innerHTML = lessonList;
     }  
 };
 
-var mapRender = new MapRender();
-mapRender.renderMap();
-
-
+window.onload = function () {
+    menuRender.renderMenu("Содержание курса", 0);
+    var mapRender = new MapRender();
+    mapRender.renderMap();   
+}

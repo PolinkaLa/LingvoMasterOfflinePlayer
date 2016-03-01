@@ -1,52 +1,28 @@
 function LessonRender () {
     this.renderLesson = function () {
-        lesson = getLesson();
-        var body = document.getElementsByTagName('BODY')[0];
+        lesson = lessonGet.getLesson();
+        test = testGet.getTest();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var lessonTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                '<h3 class="author-style">{{=ex}}</h2>'+
+                            '</div>';
+        var exercises = '';
+        var tests = '';
+        var testBlock = '<div class="body-div" style="margin-right: 5%"><a href={{=link}} class="btn btn-primary btn-sm btn-block">{{=test}}</a><br></div>';
+
         for (var key in lesson) {
-            var course = document.createElement("DIV");
-            course.style = "text-align: left; margin-left: 5%; margin-right: 5%"
-            var ex = document.createElement("H2");
-            ex.innerHTML = lesson[key];
-            course.appendChild(ex);
-            body.appendChild(course);
-        }
-        test = getTest();
-        var tests = document.createElement("DIV");
+            exercises = exercises + renderTemplate(lessonTemplate, {ex: lesson[key]});
+        } 
+
         for (var key in test) {
-            var testLink = document.createElement("A");
-            testLink.href = "../test/test.html";
-            testLink.innerHTML = "Test";
-            tests.appendChild(testLink);
-            body.appendChild(tests);
+            tests = tests + renderTemplate(testBlock, {link: "../test/test.html", test: "Test"+key});
         }
-
-        var menu = document.createElement("DIV");
-        var linkBack = document.createElement("A");
-        linkBack.href = "../courseMap/courseMap.html";
-        var imgBack = document.createElement("IMG");
-        imgBack.src = "../../../img/back.jpg";
-        imgBack.width = "100";
-        imgBack.style = "margin-right: 100px;";
-        linkBack.appendChild(imgBack);
-        menu.appendChild(linkBack);
-
-        var button = document.createElement("A");
-        button.href = "../courseMap/courseMap.html";
-        button.innerHTML = "Map";
-        menu.appendChild(button);
-
-        var linkForth = document.createElement("A");
-        linkForth.href = "../courseMap/courseMap.html";
-        var imgForth = document.createElement("IMG");
-        imgForth.src = "../../../img/forth.jpg";
-        imgForth.width = "100";
-        imgForth.style = "margin-left: 100px;";
-        linkForth.appendChild(imgForth);
-        menu.appendChild(linkForth);
-
-        body.appendChild(menu);
+        bodyDiv.innerHTML = exercises + tests;
     }
 };
 
-var lessonRender = new LessonRender();
-lessonRender.renderLesson();
+window.onload = function () {
+    menuRender.renderMenu("Урок", 15);
+    var lessonRender = new LessonRender();
+    lessonRender.renderLesson();   
+}
