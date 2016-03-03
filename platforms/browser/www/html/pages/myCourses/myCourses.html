@@ -2,26 +2,22 @@
 <html lang="ru-RU">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel=stylesheet href="../../../css/bootstrap.min.css" type="text/css">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
         <script type="text/javascript" src="../../../cordova.js"></script>
-        <script type="text/javascript" src="../../../js/View/courses.js"></script>
-        <script type="text/javascript" src="../../../js/Logic/courses.js"></script>
+        <script type="text/javascript" src="../../../js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+        <script charset="utf-8" type="text/javascript" src="../../../js/renderTemplate.js"></script>
+        <script charset="utf-8" type="text/javascript" src="../../../js/menuRender.js"></script>
+        <script charset="utf-8" type="text/javascript" src="../../../js/logic/myCourses.js"></script>
+        <script charset="utf-8" type="text/javascript" src="../../../js/view/myCourses.js"></script>
         <title>My Courses</title>
     </head>
-    <body onload="renderMyCourses();">
-        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-        <label class="btn-menu" for="hmt">
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-        </label>
-        <ul class="hidden-menu">
-            <li style="margin-top: 10%; text-align: left"><img src="../../../img/company_logo.png" width="50%" height="50%"></li>
-            <li><a href="../myCourses/myCourses.html">Мои курсы</a></li>
-            <li><a href="../downloadedCourses/downloadedCourses.html">Загруженные курсы</a></li>
-        </ul>
-        <header>
-            <h1>Мои курсы</h1>
-        </header>
+    <body>
+      <div id="menu">
+        </div>
+        <div id="bodyOfPage" style="margin-top:60px">
+        </div>
     </body>
 </html>

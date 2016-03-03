@@ -1,44 +1,36 @@
 function InfoRender () {
     this.renderInfo = function () {
-        var info = getInfo();
-        var body = document.getElementsByTagName('BODY')[0];
-
-        var course = document.createElement("DIV");
-        course.style = "text-align: left; margin-left: 5%; margin-right: 5%";
-        body.appendChild(course);
-
-        var img = document.createElement("IMG");
-        img.src = info.img;
-        course.appendChild(img);
-
-        var name = document.createElement("H2");
-        name.innerHTML = info.name;
-        course.appendChild(name);
-
-        var annatation = document.createElement("H3");
-        annatation.innerHTML = info.annatation;
-        course.appendChild(annatation);
-
-        var about = document.createElement("H3");
-        about.innerHTML = info.about;
-        course.appendChild(about);
-
-        var author = document.createElement("H3");
-        author.innerHTML = info.author;
-        course.appendChild(author);
-
-        var button = document.createElement("A");
-        button.href = "myCourses.html";
-        button.innerHTML = "Download";
-        course.appendChild(button);
-
+        var info = infoGet.getInfo();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseInfoTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                    '<img src={{=im}}>'+
+                                    '<h3 class="titl-course">{{=name}}</h2>'+
+                                    '<h4 class="text-color">{{=annatation}}</h4>'+
+                                    '<h4 class="text-color">{{=about}}</h4>'+
+                                    '<h4 class="text-color">{{=author}}</h4>'+
+                                    '<a href={{=link}} class="btn btn-success btn-lg btn-block">Download</a>'+
+                                    '<div id="lesson"></div>'+
+                                    '</div>';
+        bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 
+            {im: info.img, 
+            name: info.name, 
+            annatation: info.annatation,
+            about: info.about, 
+            author: info.author, 
+            link: "../downloadedCourses/downloadedCourses.html"});
+        var lessonBlock = document.getElementById('lesson');
+        var lessonBlockTemplate = '<h4 class="text-color"> {{=lesson}} </h4>';
+        var lessonList = "";
         var lessons = info.lesson;
         for (var j = 0; j < lessons.length; j++) {
-            var lesson = document.createElement("H3");
-            lesson.innerHTML = lessons[j];
-            course.appendChild(lesson);
+            lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j]});
         }
+        lessonBlock.innerHTML = lessonList;
     }
 };
-var infoRender = new InfoRender();
-infoRender.renderInfo();
+
+window.onload = function () {
+    menuRender.renderMenu("Информация о курсе", 0);
+    var infoRender = new InfoRender();
+    infoRender.renderInfo();   
+}
