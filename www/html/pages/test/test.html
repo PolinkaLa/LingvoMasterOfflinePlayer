@@ -3,21 +3,29 @@
     <head>
         <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel=stylesheet href="../../../css/bootstrap.min.css" type="text/css">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
+
+        <link rel=stylesheet href="../../../lib/bootstrap/bootstrap.min.css" type="text/css">
+        <link rel=stylesheet href="../../../lib/pushy/pushy.css" type="text/css">
+
         <script type="text/javascript" src="../../../cordova.js"></script>
-        <script type="text/javascript" src="../../../js/jquery-1.12.0.min.js"></script>
-        <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../../../js/renderTemplate.js"></script>
+        <script type="text/javascript" src="../../../lib/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../../../lib/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../../lib/renderTemplate.js"></script>
+        
         <script type="text/javascript" src="../../../js/menuRender.js"></script>
+        <script type="text/javascript" src="../../../js/dal/test.js"></script>
         <script type="text/javascript" src="../../../js/logic/test.js"></script>
-        <script type="text/javascript" src="../../../js/view/test.js"></script>
         <title>Test Run</title>
     </head>
     <body>
-        <div id="menu">
+        <div class="site-overlay"></div>      
+        <div class="menu-btn">
+            <h2 class="col-xs-1" style="color:#337ab7; text-align: left; margin-top: 0px">&#9776;</h2>
+            <div><h2 class="text-color" style="margin-top: 0px">Тест</div>
+            <div id="menu"></div>
         </div>
-        <div id="bodyOfPage" style="margin-top:60px">
+        <div id="bodyOfPage">
         </div>
         <div class="row">
             <div class="col-xs-4">

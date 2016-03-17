@@ -1,4 +1,4 @@
-function MyCourses () {
+function MyCoursesGet () {
     this.getMyCourses = function () {
         var course1 = {
             name: "Course 1",
@@ -24,4 +24,4 @@ function MyCourses () {
     }   
 }
 
-var MY_COURSES = new MyCourses();
+var myCoursesGet = new MyCoursesGet();

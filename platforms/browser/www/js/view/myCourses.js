@@ -1,6 +1,6 @@
 function MyCourseRenderer() {
     this.renderMyCourses = function () {
-        var course = myCoursesGet.getMyCourses();
+        var course = MY_COURSES.getMyCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseList = "";
         var courseTemplate = '<div class="body-div" style="margin-right: 5%">'+ 

@@ -1,15 +1,27 @@
-function MapGet () {
-	this.getMap = function () {
-	    var infoCourse = {
-	        img: "../../../test_data/1.png",
-	        name: "Course",
-	        author: "Author Author",
-	        annatation: "This course is designed for beginners to learn English. Corresponds to the level A1 in the European system of evaluation levels.",
-	        about: "A detailed course description is missing",
-	        lesson: ["Lesson 1", "Lesson 2", "Lesson 3", "Lesson 4", "Lesson 5"],
-	    }
-	    return infoCourse;
-	}
+function MapRender () {
+    this.renderMap = function () {
+        var info = mapGet.getMap();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseMapTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                    '<h3 class="titl-course">{{=name}}</h2>'+
+                                    '<div style ="text-align: center; margin-top: 20px" id="lesson">'+
+                                    '</div>'+
+                                '</div>';
+        bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});
+        var lessonBlock = document.getElementById('lesson');
+        var lessonBlockTemplate = '<a href={{=link}} class="btn btn-primary btn-block"> {{=lesson}} </a> <br>';
+        var lessonList = "";
+        var lessons = info.lesson;
+        for (var j = 0; j < lessons.length; j++) {
+            lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j], link: "../lesson/lesson.html"});
+        }
+        lessonBlock.innerHTML = lessonList;
+    }  
 };
 
-var mapGet = new MapGet();
+window.onload = function () {
+    var mapRender = new MapRender();
+    mapRender.renderMap();
+    var menuRender = new MenuRender();
+    menuRender.renderMenu(); 
+}

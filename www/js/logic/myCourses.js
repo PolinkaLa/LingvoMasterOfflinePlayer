@@ -1,27 +1,31 @@
-function MyCoursesGet () {
-    this.getMyCourses = function () {
-        var course1 = {
-            name: "Course 1",
-            author: "Author Author",
-            img: "../../../test_data/1.png"
-        };
-
-        var course2 = {
-            name: "Course 2",
-            author: "Author Author",
-            img: "../../../test_data/2.jpg"
-        };
-
-        var course3 = {
-            name: "Course 3",
-            author: "Author Author",
-            img: "../../../test_data/3.jpg"
+function MyCourseRenderer() {
+    this.renderMyCourses = function () {
+        var course = myCoursesGet.getMyCourses();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseList = "";
+        var courseTemplate = '<div class="body-div" style="margin-right: 5%">'+ 
+                                '<img src={{=im}}>'+
+                                '<div class="row">'+
+                                    '<div class="col-xs-8">'+
+                                        '<h3 class="titl-course">{{=name}}</h3>'+ 
+                                        '<h3 class="author-style">{{=author}}</h3>'+
+                                    '</div>'+ 
+                                    '<div class="col-xs-4">'+
+                                        '<a href={{=link}} class="btn btn-success btn-block" style="margin-top: 20px">INFO</a><br><br>'+
+                                    '</div>'+
+                                '</div>'+ 
+                            '</div>';
+        for (var i = 0; i < course.length; i++) {
+            courseList = courseList + renderTemplate(courseTemplate, {im: course[i].img, name: course[i].name, author: course[i].author, link: "../infoCourse/infoCourse.html"});
         }
+        bodyDiv.innerHTML = courseList;
+    }
+};
 
-        var courses = [course1, course2, course3];
-
-        return courses;
-    }   
+window.onload = function () {
+    var myCourseRenderer = new MyCourseRenderer();
+    myCourseRenderer.renderMyCourses();
+    var menuRender = new MenuRender();
+    menuRender.renderMenu();
 }
 
-var myCoursesGet = new MyCoursesGet();

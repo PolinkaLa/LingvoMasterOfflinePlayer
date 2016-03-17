@@ -1,16 +1,37 @@
-function InfoGet () {
-    this.getInfo = function () {
-        var infoCourse = {
-            img: "../../../test_data/1.png",
-            name: "Course",
-            author: "Author Author",
-            annatation: "This course is designed for beginners to learn English. Corresponds to the level A1 in the European system of evaluation levels.",
-            about: "A detailed course description is missing",
-            lesson: ["Lesson 1", "Lesson 2", "Lesson 3", "Lesson 4", "Lesson 5"],
-            test: ["Test 1", "Test 2", "Test 3"]
+function InfoRender () {
+    this.renderInfo = function () {
+        var info = infoGet.getInfo();
+        var bodyDiv = document.getElementById('bodyOfPage');
+        var courseInfoTemplate = '<div class="body-div" style="margin-right: 5%">'+
+                                    '<img src={{=im}}>'+
+                                    '<h3 class="titl-course">{{=name}}</h2>'+
+                                    '<h4 class="text-color">{{=annatation}}</h4>'+
+                                    '<h4 class="text-color">{{=about}}</h4>'+
+                                    '<h4 class="text-color">{{=author}}</h4>'+
+                                    '<a href={{=link}} class="btn btn-success btn-lg btn-block">Download</a>'+
+                                    '<div id="lesson"></div>'+
+                                    '</div>';
+        bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 
+            {im: info.img, 
+            name: info.name, 
+            annatation: info.annatation,
+            about: info.about, 
+            author: info.author, 
+            link: "../downloadedCourses/downloadedCourses.html"});
+        var lessonBlock = document.getElementById('lesson');
+        var lessonBlockTemplate = '<h4 class="text-color"> {{=lesson}} </h4>';
+        var lessonList = "";
+        var lessons = info.lesson;
+        for (var j = 0; j < lessons.length; j++) {
+            lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j]});
         }
-        return infoCourse;
-    }    
-}
+        lessonBlock.innerHTML = lessonList;
+    }
+};
 
-var infoGet = new InfoGet();
+window.onload = function () {
+    var infoRender = new InfoRender();
+    infoRender.renderInfo();
+    var menuRender = new MenuRender();
+    menuRender.renderMenu();
+}

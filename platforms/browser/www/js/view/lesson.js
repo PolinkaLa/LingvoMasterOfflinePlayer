@@ -1,10 +1,10 @@
 function LessonRender () {
     this.renderLesson = function () {
-        lesson = lessonGet.getLesson();
-        test = testGet.getTest();
+        lesson = LESSON.getLesson();
+        test = TEST.getTest();
         var bodyDiv = document.getElementById('bodyOfPage');
         var lessonTemplate = '<div class="body-div" style="margin-right: 5%">'+
-                                '<h3 class="author-style">{{=ex}}</h2>'+
+                                '<h3 class="author-style">{{=ex}}</h3>'+
                             '</div>';
         var exercises = '';
         var tests = '';

@@ -1,6 +1,6 @@
 function DownloadedRender() {
     this.renderDownloaded = function () {
-        var course = downloadedCoursesGet.getDownloadedCourses();
+        var course = DOWNLOADED.getDownloadedCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseList = "";
         var courseTemplate = '<div class="body-div" style="margin-right: 5%">'+ 

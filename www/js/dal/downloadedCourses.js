@@ -1,5 +1,5 @@
-function MyCourses () {
-    this.getMyCourses = function () {
+function DownloadedCoursesGet () {
+    this.getDownloadedCourses = function () {
         var course1 = {
             name: "Course 1",
             author: "Author Author",
@@ -21,7 +21,8 @@ function MyCourses () {
         var courses = [course1, course2, course3];
 
         return courses;
-    }   
-}
+    }    
+};
 
-var MY_COURSES = new MyCourses();
+var downloadedCoursesGet = new DownloadedCoursesGet();
+

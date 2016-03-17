@@ -1,4 +1,4 @@
-function DownloadedCoursesGet () {
+function Downloaded () {
     this.getDownloadedCourses = function () {
         var course1 = {
             name: "Course 1",
@@ -24,5 +24,5 @@ function DownloadedCoursesGet () {
     }    
 };
 
-var downloadedCoursesGet = new DownloadedCoursesGet();
+var DOWNLOADED = new Downloaded();
 

@@ -1,6 +1,6 @@
 function MapRender () {
     this.renderMap = function () {
-        var info = mapGet.getMap();
+        var info = MAP.getMap();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseMapTemplate = '<div class="body-div" style="margin-right: 5%">'+
                                     '<h3 class="titl-course">{{=name}}</h2>'+

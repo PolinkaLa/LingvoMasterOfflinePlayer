@@ -1,7 +1,7 @@
 function TestRender () {
     this.renderTest = function () {
 
-        var test = testGet.getTest();
+        var test = TEST.getTest();
 
         var bodyDiv = document.getElementById('bodyOfPage');
         var testTemplate = '<div class="body-div" style="margin-right: 5%">'+
