@@ -1,6 +1,6 @@
 function InfoRender () {
     this.renderInfo = function () {
-        var info = infoGet.getInfo();
+        var infoCourse = info.getInfo();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseInfoTemplate = '<div class="body-div" style="margin-right: 5%">'+
                                     '<img src={{=im}}>'+
@@ -12,16 +12,16 @@ function InfoRender () {
                                     '<div id="lesson"></div>'+
                                     '</div>';
         bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 
-            {im: info.img, 
-            name: info.name, 
-            annatation: info.annatation,
-            about: info.about, 
-            author: info.author, 
+            {im: infoCourse.img, 
+            name: infoCourse.name, 
+            annatation: infoCourse.annatation,
+            about: infoCourse.about, 
+            author: infoCourse.author, 
             link: "../downloadedCourses/downloadedCourses.html"});
         var lessonBlock = document.getElementById('lesson');
         var lessonBlockTemplate = '<h4 class="text-color"> {{=lesson}} </h4>';
         var lessonList = "";
-        var lessons = info.lesson;
+        var lessons = infoCourse.lesson;
         for (var j = 0; j < lessons.length; j++) {
             lessonList = lessonList + renderTemplate(lessonBlockTemplate, {lesson: lessons[j]});
         }

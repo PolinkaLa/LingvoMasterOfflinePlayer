@@ -1,7 +1,7 @@
 function TestRender () {
     this.renderTest = function () {
 
-        var test = testGet.getTest();
+        var testCourse = test.getTest();
 
         var bodyDiv = document.getElementById('bodyOfPage');
         var testTemplate = '<div class="body-div" style="margin-right: 5%">'+
@@ -9,8 +9,8 @@ function TestRender () {
                             '</div>';
         var exercises = '';
 
-        for (var key in test) {
-            exercises = exercises + renderTemplate(testTemplate, {ex: test[key]});
+        for (var key in testCourse) {
+            exercises = exercises + renderTemplate(testTemplate, {ex: testCourse[key]});
         } 
 
         bodyDiv.innerHTML = exercises;

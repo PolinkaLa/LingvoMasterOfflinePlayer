@@ -1,4 +1,4 @@
-function LessonGet () {
+function Lesson () {
 	this.getLesson = function () {
 	    var lesson = {
 	        ex1: "Shopping is a new kind of hobby or just a waste of time? A lot of people find it the best treatment for a bad mood. Buying new clothes may bring pleasant emotions and change image for the better. But a lot of people consider shopping to be a waste of time and money. Men usually do not like to go shopping very much. And women cannot resist the temptation of buying a new becoming dress.",
@@ -9,4 +9,4 @@ function LessonGet () {
 	}	
 }
 
-var lessonGet = new LessonGet();
+var lesson = new Lesson();

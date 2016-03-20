@@ -1,4 +1,4 @@
-function InfoGet () {
+function Info () {
     this.getInfo = function () {
         var infoCourse = {
             img: "../../../test_data/1.png",
@@ -13,4 +13,4 @@ function InfoGet () {
     }    
 }
 
-var infoGet = new InfoGet();
+var info = new Info();
