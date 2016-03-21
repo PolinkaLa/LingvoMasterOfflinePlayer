@@ -1,32 +1,50 @@
 function CourseService () {
-	/**
-	 * function to get a list of available courses to the user
-	 * @param  {string} userLogin - email user
-	 * @return {array[course]} listCourse - array of course
-	 */
-	this.getListCourses = function(userLogin) {
-		var course = {
-			name: "",
-			author: "",
-            img: ""
-		};
-		var lisrCourse = [];
-		return listCourses;
-	};
 
 	/**
-	 * function to get information, content and exercises of course
-	 * @param  {number} idCourse - unique number of the course
-	 * @return {course} course - object stores the data of course
+	 * function which allows to get the list of courses available for a current user
+	 * @param  {string} userLogin - email of current user
+	 * @return {array[object]} - list of courses with brief information about them
 	 */
-	this.getCourse = function(idCourse){
-		var сourse = {
+	this.getMyCoursesList = function(userLogin) {
+		var myCoursesList = [{}];
+		return myCoursesList; 
+	}
+
+	/**
+	 * function which allows to get the list of downloaded are available to study for the current user
+	 * @param  {string} userLogin - email of current user
+	 * @return {array[object]} - list of courses with brief information about them
+	 */
+	this.getDownloadedCoursesList = function(userLogin) {
+		var downloadedCoursesList = [];
+		return downloadedCoursesList;
+	}
+
+	/**
+	 * function which allows to get the list lesson of course
+	 * @param  {number} idCourse - the unique number of the course
+	 * @return {array[string]} - the list lesson of course
+	 */
+	this.getCourseMap = function(idCourse) {
+		var lessonList = [];
+		return lessonList;
+	}
+
+	/**
+	 * function which allows to get basic information about course
+	 * @param  {number} idCourse - the unique number of the course
+	 * @return {object} - the object containing basic information about the course
+	 */
+	this.getInfoCourses = function(idCourse) {
+		var information = {
+			imgURL: "",
 			name: "",
 			author: "",
-            img: "",
-            content: {};
-            exercise: {}
+            annatation: "",
+            about: "",
+            lesson: [],
+            test: []
 		}
-		return course;
+		return information;
 	}
 };
