@@ -9,5 +9,14 @@ function ContentService () {
 		var listUrlFiles = [];
 		return listUrlFiles;
 	}
+	/**
+	 * function to get url to the file in the file system
+	 * @param  {number} idContent - the unique number of file
+	 * @return {string} - path to the file in the file system
+	 */
+	 this.getContent = function(idContent) {
+	 	var url = "";
+	 	return url;
+	 }
 };
 

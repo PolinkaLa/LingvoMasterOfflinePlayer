@@ -47,4 +47,17 @@ function CourseService () {
 		}
 		return information;
 	}
+
+	/**
+	 * [getCourse description]
+	 * @param  {number} idCourse - the unique number of the course
+	 * @return {object} - the object containing information about content and exercise of course
+	 */
+	this.getCourse = function(idCourse) {
+		var course = {
+			content: [],
+			exercise: []
+		};
+		return course;
+	}
 };
