@@ -1,15 +1,12 @@
+loadScript("../../../js/dal/courseMap.js");
 function MapRender () {
     this.renderMap = function () {
-        var info = mapGet.getMap();
+        var info = map.getMap();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var courseMapTemplate = '<div class="body-div" style="margin-right: 5%">'+
-                                    '<h3 class="titl-course">{{=name}}</h2>'+
-                                    '<div style ="text-align: center; margin-top: 20px" id="lesson">'+
-                                    '</div>'+
-                                '</div>';
+        var courseMapTemplate = getTemplate("../../templates/courseMap/courseMap.html");
         bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});
         var lessonBlock = document.getElementById('lesson');
-        var lessonBlockTemplate = '<a href={{=link}} class="btn btn-primary btn-block"> {{=lesson}} </a> <br>';
+        var lessonBlockTemplate = getTemplate("../../templates/courseMap/lessonBlock.html");
         var lessonList = "";
         var lessons = info.lesson;
         for (var j = 0; j < lessons.length; j++) {
@@ -20,7 +17,8 @@ function MapRender () {
 };
 
 window.onload = function () {
-    menuRender.renderMenu("Содержание курса", 0);
     var mapRender = new MapRender();
-    mapRender.renderMap();   
+    mapRender.renderMap();
+    var menuRender = new MenuRender();
+    menuRender.renderMenu("Содержание"); 
 }

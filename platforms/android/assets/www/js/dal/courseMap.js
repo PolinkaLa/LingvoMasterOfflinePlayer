@@ -1,4 +1,4 @@
-function MapGet () {
+function Map () {
 	this.getMap = function () {
 	    var infoCourse = {
 	        img: "../../../test_data/1.png",
@@ -12,4 +12,4 @@ function MapGet () {
 	}
 };
 
-var mapGet = new MapGet();
+var map = new Map();
