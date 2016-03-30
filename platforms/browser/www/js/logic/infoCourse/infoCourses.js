@@ -9,8 +9,7 @@ function InfoRender () {
             name: infoCourse.name, 
             annatation: infoCourse.annatation,
             about: infoCourse.about, 
-            author: infoCourse.author, 
-            link: "../downloadedCourses/downloadedCourses.html"});
+            author: infoCourse.author});
         var lessonBlock = document.getElementById('lesson');
         var lessonBlockTemplate = getTemplate("../../templates/infoCourse/lessonBlock.html");
         var lessonList = "";

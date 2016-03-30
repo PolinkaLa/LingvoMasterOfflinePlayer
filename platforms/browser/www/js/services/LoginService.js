@@ -1,23 +1,19 @@
 function LoginService () {
-	/**
-	 * checks the user record with specified email
-	 * @param  {string} userLogin - email user
-	 * @return {boolean} - result of identification 
-	 */
-	this.identification = function(userLogin) {
-		var status = true;
-		return status;
-	}
 
-	/**
-	 * the user authentication
-	 * @param  {string} userLogin - email user
-	 * @param  {string} password  - password
-	 * @return {boolean} - autentification
-	 */
-	this.autentification = function(userLogin, password) {
-		var status = true;
-		return status;
+	this.identification = function() {
+		var userName = document.getElementById("login").value;
+		if (userName == "miss.lappo@yandex.ru") {
+			window.location = "password.html";
+		}
+		else {
+			alert("invalid login")
+		}
 	}
-
 };
+
+window.onload = function () {
+	var login = new LoginService();
+    document.getElementById("loginBTN").onclick = function () {
+    	login.identification();
+    }
+}

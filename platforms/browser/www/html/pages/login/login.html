@@ -6,6 +6,7 @@
         <link rel=stylesheet href="../../../lib/bootstrap/bootstrap.min.css" type="text/css">
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
         <script type="text/javascript" src="../../../cordova.js"></script>
+        <script type="text/javascript" src="../../../js/services/LoginService.js"></script>
         <title>Start</title>
     </head>
     <body>
@@ -15,12 +16,12 @@
             </div>
             <div>
                 <p class="h2 text-color">Введите логин</p>
-                <input type="text" size="40">
+                <input id="login" type="text" size="40">
                 <p></p>
                 <a href="https://lingvomaster.org/home?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_58_struts_action=%2Flogin%2Fcreate_account" class="h4">Зарегистрироваться</a>
             </div>
             <div>
-                <a href="../login/password.html" class="btn btn-success btn-lg" style="
+                <a id="loginBTN" class="btn btn-success btn-lg" style="
     margin-top: 10%">Войти</a>
             </div>
         </div>
