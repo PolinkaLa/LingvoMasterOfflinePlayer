@@ -3,7 +3,7 @@ function InfoRender () {
     this.renderInfo = function () {
         var infoCourse = info.getInfo();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var courseInfoTemplate = getTemplate("../../templates/infoCourse/infoCourse.html");
+        var courseInfoTemplate = getTemplate("infoCourseTmpl.html");
         bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 
             {im: infoCourse.img, 
             name: infoCourse.name, 
@@ -11,7 +11,7 @@ function InfoRender () {
             about: infoCourse.about, 
             author: infoCourse.author});
         var lessonBlock = document.getElementById('lesson');
-        var lessonBlockTemplate = getTemplate("../../templates/infoCourse/lessonBlock.html");
+        var lessonBlockTemplate = getTemplate("lessonBlockTmpl.html");
         var lessonList = "";
         var lessons = infoCourse.lesson;
         for (var j = 0; j < lessons.length; j++) {

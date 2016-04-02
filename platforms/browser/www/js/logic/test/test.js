@@ -5,7 +5,7 @@ function TestRender () {
         var testCourse = test.getTest();
 
         var bodyDiv = document.getElementById('bodyOfPage');
-        var testTemplate = getTemplate("../../templates/test/test.html");
+        var testTemplate = getTemplate("testTmpl.html");
         var exercises = '';
 
         for (var key in testCourse) {

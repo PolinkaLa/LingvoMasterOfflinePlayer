@@ -1,5 +1,9 @@
 function MenuRender () {
     this.renderMenu = function (title) {
+        var overlay = document.createElement('div');
+        overlay.setAttribute('class', 'site-overlay');
+        document.getElementsByTagName('body')[0].appendChild(overlay);
+
         var menuDiv = document.getElementById('menu');
         
         var menuTemplate = getTemplate('../../templates/menu.html')

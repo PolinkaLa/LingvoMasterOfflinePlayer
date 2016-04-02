@@ -3,10 +3,10 @@ function MapRender () {
     this.renderMap = function () {
         var info = map.getMap();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var courseMapTemplate = getTemplate("../../templates/courseMap/courseMap.html");
+        var courseMapTemplate = getTemplate("courseMapTmpl.html");
         bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});
         var lessonBlock = document.getElementById('lesson');
-        var lessonBlockTemplate = getTemplate("../../templates/courseMap/lessonBlock.html");
+        var lessonBlockTemplate = getTemplate("lessonBlockTmpl.html");
         var lessonList = "";
         var lessons = info.lesson;
         for (var j = 0; j < lessons.length; j++) {

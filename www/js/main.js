@@ -21,6 +21,6 @@ function loadScript(src, callback) {
 loadScript("../../../cordova.js");
 loadScript("../../../lib/jquery-1.12.0.min.js");
 loadScript("../../../lib/bootstrap/bootstrap.min.js");
-loadScript("../../../lib/getTemplate.js");
-loadScript("../../../lib/renderTemplate.js");
+loadScript("../../../js/getTemplate.js");
+loadScript("../../../js/renderTemplate.js");
 loadScript("../../../js/menuRender.js");
