@@ -1,4 +1,4 @@
-loadScript("../../../js/dal/test.js");
+main.loadScript("../../../js/dal/test.js");
 function TestRender () {
     this.renderTest = function () {
 

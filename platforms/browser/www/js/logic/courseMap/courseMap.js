@@ -1,4 +1,4 @@
-loadScript("../../../js/dal/courseMap.js");
+main.loadScript("../../../js/dal/courseMap.js");
 function MapRender () {
     this.renderMap = function () {
         var info = map.getMap();

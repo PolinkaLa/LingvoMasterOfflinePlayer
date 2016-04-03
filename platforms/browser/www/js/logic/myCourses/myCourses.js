@@ -1,4 +1,4 @@
-loadScript("../../../js/dal/myCourses.js");
+main.loadScript("../../../js/dal/myCourses.js");
 function MyCourseRenderer() {
     this.renderMyCourses = function () {
         var course = myCourses.getMyCourses();

@@ -1,4 +1,4 @@
-loadScript("../../../js/dal/infoCourses.js");
+main.loadScript("../../../js/dal/infoCourses.js");
 function InfoRender () {
     this.renderInfo = function () {
         var infoCourse = info.getInfo();

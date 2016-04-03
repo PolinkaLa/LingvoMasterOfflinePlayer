@@ -1,4 +1,4 @@
-loadScript("../../../js/dal/downloadedCourses.js");
+main.loadScript("../../../js/dal/downloadedCourses.js");
 function DownloadedRender() {
     this.renderDownloaded = function () {
         var course = downloadedCourses.getDownloadedCourses();

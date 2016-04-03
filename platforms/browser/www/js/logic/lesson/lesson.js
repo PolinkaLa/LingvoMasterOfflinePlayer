@@ -1,5 +1,5 @@
-loadScript("../../../js/dal/lesson.js");
-loadScript("../../../js/dal/test.js");
+main.loadScript("../../../js/dal/lesson.js");
+main.loadScript("../../../js/dal/test.js");
 function LessonRender () {
     this.renderLesson = function () {
         lessonCourse = lesson.getLesson();
