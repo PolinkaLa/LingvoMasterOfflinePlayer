@@ -1,7 +1,7 @@
-main.loadScript("../../../js/dal/courseMap.js");
+main.loadScript("../../../js/services/CourseService.js");
 function MapRender () {
     this.renderMap = function () {
-        var info = map.getMap();
+        var info = courseService.getInfoCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseMapTemplate = getTemplate("courseMapTmpl.html");
         bodyDiv.innerHTML = renderTemplate(courseMapTemplate, {name: info.name});

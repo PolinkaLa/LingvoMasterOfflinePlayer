@@ -1,7 +1,7 @@
-main.loadScript("../../../js/dal/infoCourses.js");
+main.loadScript("../../../js/services/CourseService.js");
 function InfoRender () {
     this.renderInfo = function () {
-        var infoCourse = info.getInfo();
+        var infoCourse = courseService.getInfoCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseInfoTemplate = getTemplate("infoCourseTmpl.html");
         bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 

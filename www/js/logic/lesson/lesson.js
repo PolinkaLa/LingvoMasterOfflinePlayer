@@ -1,9 +1,8 @@
-main.loadScript("../../../js/dal/lesson.js");
-main.loadScript("../../../js/dal/test.js");
+main.loadScript("../../../js/services/ExerciseService.js");
 function LessonRender () {
     this.renderLesson = function () {
-        lessonCourse = lesson.getLesson();
-        testCourse = test.getTest();
+        lessonCourse = exerciseService.getExercise();
+        testCourse = exerciseService.getExercise();
         var bodyDiv = document.getElementById('bodyOfPage');
         var lessonTemplate = getTemplate("lessonTmpl.html");
         var exercises = '';

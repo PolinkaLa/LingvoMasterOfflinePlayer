@@ -1,7 +1,7 @@
-main.loadScript("../../../js/dal/myCourses.js");
+main.loadScript("../../../js/services/CourseService.js");
 function MyCourseRenderer() {
     this.renderMyCourses = function () {
-        var course = myCourses.getMyCourses();
+        var course = courseService.getUserCoursesList("1");
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseList = "";
         var courseTemplate = getTemplate("myCoursesTmpl.html");

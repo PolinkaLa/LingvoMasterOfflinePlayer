@@ -1,7 +1,7 @@
-main.loadScript("../../../js/dal/downloadedCourses.js");
+main.loadScript("../../../js/services/CourseService.js");
 function DownloadedRender() {
     this.renderDownloaded = function () {
-        var course = downloadedCourses.getDownloadedCourses();
+        var course = courseService.getDownloadedCoursesList();
         var bodyDiv = document.getElementById('bodyOfPage');
         var courseList = "";
         var courseTemplate = getTemplate("downloadedCoursesTmpl.html")
