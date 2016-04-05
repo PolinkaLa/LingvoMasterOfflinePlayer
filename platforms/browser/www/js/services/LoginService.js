@@ -1,19 +1,8 @@
 function LoginService () {
 
-	this.identification = function() {
-		var userName = document.getElementById("login").value;
-		if (userName == "miss.lappo@yandex.ru") {
-			window.location = "password.html";
-		}
-		else {
-			alert("invalid login")
-		}
+	this.authorize = function(userName, password) {
+		return true;
 	}
 };
+var loginService = new LoginService();
 
-window.onload = function () {
-	var login = new LoginService();
-    document.getElementById("loginBTN").onclick = function () {
-    	login.identification();
-    }
-}
