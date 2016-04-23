@@ -1,11 +1,11 @@
-loadScript("../../../js/dal/test.js");
+main.loadScript("../../../js/services/ExerciseService.js");
 function TestRender () {
     this.renderTest = function () {
 
-        var testCourse = test.getTest();
+        var testCourse = exerciseService.getExercise();
 
         var bodyDiv = document.getElementById('bodyOfPage');
-        var testTemplate = getTemplate("../../templates/test/test.html");
+        var testTemplate = getTemplate("testTmpl.html");
         var exercises = '';
 
         for (var key in testCourse) {

@@ -1,18 +1,17 @@
-loadScript("../../../js/dal/infoCourses.js");
+main.loadScript("../../../js/services/CourseService.js");
 function InfoRender () {
     this.renderInfo = function () {
-        var infoCourse = info.getInfo();
+        var infoCourse = courseService.getInfoCourses();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var courseInfoTemplate = getTemplate("../../templates/infoCourse/infoCourse.html");
+        var courseInfoTemplate = getTemplate("infoCourseTmpl.html");
         bodyDiv.innerHTML = renderTemplate(courseInfoTemplate, 
             {im: infoCourse.img, 
             name: infoCourse.name, 
             annatation: infoCourse.annatation,
             about: infoCourse.about, 
-            author: infoCourse.author, 
-            link: "../downloadedCourses/downloadedCourses.html"});
+            author: infoCourse.author});
         var lessonBlock = document.getElementById('lesson');
-        var lessonBlockTemplate = getTemplate("../../templates/infoCourse/lessonBlock.html");
+        var lessonBlockTemplate = getTemplate("lessonBlockTmpl.html");
         var lessonList = "";
         var lessons = infoCourse.lesson;
         for (var j = 0; j < lessons.length; j++) {

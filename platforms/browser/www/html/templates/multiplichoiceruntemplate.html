@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="../../../css/multiplechoicerun.css">
+
+<div class="mc-run">
+{{ var questionsCount = Object.keys(data).length; }}
+{{for (var questionNumber = 1; questionNumber <= questionsCount; questionNumber++) { }}
+
+	<div class="question{{=(1 < questionsCount) ? ' numbered' : ''}}">
+	{{ if (1 < questionsCount) { }}
+		<span class="question-counter">{{=questionNumber}}.</span>
+	{{ } }}
+		<div class="question-text">{{=data[questionNumber].question}}</div>
+		<div class="answers">
+		{{ var answerIds = shuffle(Object.keys(data[questionNumber].answers)); }}
+		{{ for (var i = 0; i < answerIds.length; i++) { }}
+			{{ var answerId = answerIds[i]; }}
+			<div class="answer" answerId="{{=answerId}}">
+				<label>
+					<input type="checkbox" answerId="{{=answerId}}"/>
+					{{=data[questionNumber].answers[answerId]}}
+				</label>
+			</div>
+		{{ } }}
+		</div>
+	</div>
+{{ } }}
+</div>

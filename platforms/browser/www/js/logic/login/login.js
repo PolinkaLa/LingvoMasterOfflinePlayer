@@ -1,12 +1,13 @@
 function Login () {
-    this.getUserName = function() {
-        var userName = document.getElementById("login").value;
-        if (/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/.test(userName)) {
-            sessionStorage.setItem("login", userName)
+    this.getEmail = function() {
+        emailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+        var email = document.getElementById("email").value;
+        if (emailPattern.test(email)) {
+            sessionStorage.setItem("userEmail", email)
             window.location = "password.html";
         }
         else {
-            alert("invalid login")
+            alert("invalid login");
         }
     }
 };
@@ -14,6 +15,6 @@ function Login () {
 window.onload = function () {
     var login = new Login();
     document.getElementById("loginBTN").onclick = function () {
-        login.getUserName();
+        login.getEmail();
     }
 }

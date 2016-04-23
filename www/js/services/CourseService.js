@@ -76,3 +76,54 @@ function CourseService () {
 };
 
 var courseService = new CourseService();
+
+
+//
+//// =========================
+//
+//function CourseServiceImpl() {
+//	this.getCourses = function () {
+//
+//	}
+//}
+//
+//var CourseService = {
+//
+//	getInstance: function () {
+//		return new CourseServiceImpl();
+//	}
+//}
+//
+//
+//
+//======================================
+//
+//function MyCOursesPage() {
+//	var courseService = CourseService.getInstance();
+//	var exerciseService = ExerciseService.getInstance();
+//
+//
+//
+//
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

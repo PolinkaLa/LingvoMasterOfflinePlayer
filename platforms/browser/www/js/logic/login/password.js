@@ -1,7 +1,7 @@
 function Password () {
     this.getPassword = function() {
         var password = document.getElementById("password").value;
-        var login = sessionStorage.getItem("login");
+        var login = sessionStorage.getItem("userEmail");
         if (loginService.authorize(login, password)){
             window.location = "../myCourses/myCourses.html";
         }

@@ -1,14 +1,13 @@
-loadScript("../../../js/dal/lesson.js");
-loadScript("../../../js/dal/test.js");
+main.loadScript("../../../js/services/ExerciseService.js");
 function LessonRender () {
     this.renderLesson = function () {
-        lessonCourse = lesson.getLesson();
-        testCourse = test.getTest();
+        lessonCourse = exerciseService.getExercise();
+        testCourse = exerciseService.getExercise();
         var bodyDiv = document.getElementById('bodyOfPage');
-        var lessonTemplate = getTemplate("../../templates/lesson/lesson.html");
+        var lessonTemplate = getTemplate("lessonTmpl.html");
         var exercises = '';
         var tests = '';
-        var testBlock = getTemplate("../../templates/lesson/testBlock.html");
+        var testBlock = getTemplate("testBlockTmpl.html");
 
         for (var key in lessonCourse){
             exercises = exercises + renderTemplate(lessonTemplate, {ex: lessonCourse[key]});

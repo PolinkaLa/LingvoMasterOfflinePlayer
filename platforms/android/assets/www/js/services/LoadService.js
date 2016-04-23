@@ -5,7 +5,7 @@ function LoadService () {
 	 * @param  {string} urlArchive - link to download archive with course
 	 * @return {string} - path to dowloaded archive in the file system
 	 */
-	this.download = function(urlArchive) {
+	this. = function(urlArchive) {
 		var pathArchive = "";
 		return pathArchive;
 	}
