@@ -1,0 +1,187 @@
+.color-hover {
+	-webkit-transition: background 300ms linear;
+	-moz-transition: background 300ms linear;
+	-ms-transition: background 300ms linear;
+	-o-transition: background 300ms linear;
+	transition: background 300ms linear;
+	
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.color-hover:HOVER, .editor-group {
+	background: #FDFDDD;
+}
+
+.placeholder-text {
+	color: gray;
+	font-style: italic;
+}
+
+/* Questions */
+#mc-questions {
+	max-width: 1000px;
+}
+.question-block {
+	margin-bottom: 15px;
+	border-bottom: 1px solid lightgray;
+	border-radius: 5px;
+	position: relative;
+}
+.question-controlls {
+	position: absolute;	
+	top: 5px;
+	right: 10px;
+}
+.question-move-controlls {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	margin-left: 10px;
+}
+#mc-questions .question-move-controlls > a {
+	height: 17px;
+	color: black;
+}
+#mc-questions .question-move-controlls > a, 
+#mc-questions .question-move-controlls > a > i {
+	text-decoration: none;
+	display: block;
+}
+
+.question-text-block {
+	min-height: 60px;
+}
+.ro-editor .tip {
+	font-size: 0.9em;
+	font-style: italic;
+}
+.editor-group {
+	padding: 10px;
+	border-radius: 6px; 
+	border: 1px solid #d3d3d3;
+}
+
+/* Answers */
+
+.mc-editor .answers-block {
+	margin-left:40px;
+}
+.mc-editor h3 {
+	margin: 0;
+	line-height: 40px;
+}
+.mc-editor .answers-block h3 {
+	font-size: 18px;
+    line-height: normal;
+    margin: 5px;
+}
+
+.mc-editor .answer {
+	box-sizing: border-box;
+	display: table;
+	width: 100%;
+	padding: 3px 5px 10px;
+}
+
+.answer-checker-block {
+	display: table-cell;
+	vertical-align: middle;
+	min-width: 20px;
+	padding-right: 10px;
+	width: 30px;
+}
+
+.aui .answer-checker-block input {
+	margin: 0;
+	
+}
+
+.answer-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding-top: 4px;
+	/* display: none; */
+}
+
+.answer-text *:last-child {
+	margin: 0;
+}
+
+.answer-ckeditor {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.answer-controlls {
+	display: table-cell;
+	vertical-align: middle;
+	width: 70px;
+	text-size: medium;
+}
+.answer-controlls > a {
+	margin-right: 10px;
+}
+
+.add-new-answer, .add-new-question {
+	margin: 5px 0 10px 0;
+	display: block;
+}
+.add-new-answer:before, .add-new-question:before {
+	content: "\f067";
+	font-family: 'fontawesome-alloy';
+}
+
+/*
+	below code need be moved to global space
+*/
+
+a {
+	cursor: pointer;
+}
+
+.finish-btn {
+	margin-top: 0.5em;
+}
+
+input[type="checkbox"] + label {
+	display: inline-block;
+}
+
+input[type="checkbox"] {
+	width: 17px;
+	height: 17px;
+	margin-top: 0;
+	margin-right: 8px;
+	display: inline-block;
+	font-size: 10px;
+}
+
+
+input[type="checkbox"]:before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	background-color: white;
+	border: 1px solid #D9D9D9;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+input[type="checkbox"]:checked:before {
+    content:"\f00c";
+    color: #FF0000;
+    background-color: white; 
+    text-align:center;
+    line-height:15px;
+    text-shadow:0px 0px 3px #eee;
+    font-family: 'fontawesome-alloy';
+	font-size: 11px;
+	font-style: normal;
+	
+}

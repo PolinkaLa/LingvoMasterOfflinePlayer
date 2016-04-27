@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarQubeConfiguration">
+    <option name="moduleKeys">
+      <map>
+        <entry key="LingvoMasterOfflinePlayer" value="runner" />
+      </map>
+    </option>
+    <option name="projectKey" value="runner" />
+    <option name="serverId" value="localhost" />
+  </component>
+</project>

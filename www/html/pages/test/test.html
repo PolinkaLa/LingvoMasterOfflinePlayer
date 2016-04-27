@@ -6,13 +6,28 @@
         <link rel=stylesheet href="../../../css/style.css" type="text/css">
 
         <script type="text/javascript" src="../../../js/util/main.js"></script>
-        <script type="text/javascript" src="../../../js/logic/test/test.js"></script>
+        <script type="text/javascript" src="../../../js/present/test/test.js"></script>
         <title>Test Run</title>
     </head>
     <body>
         <div class="menu-btn" id="menu"></div>
-        <div id="bodyOfPage">
+        <div id="titleContainer" class="h3"></div>
+        <div id="exerciseContainer" class="exercise-container"></div>
+        <div id="resultBlock">
+            <div id="resultText" class="exercise-status-block exercise-result-text">
+		        <span>
+                    <strong>
+                        <span id="message"></span>
+                    </strong>
+		        </span>
+            </div>
         </div>
+        <button class="btn btn-arrow" id="done">Проверить</button>
+        <button class="btn btn-arrow" id="tryAgain">Заново</button>
+        <button class="btn btn-arrow" id="details">Детали</button>
+        <button class="btn btn-arrow" id="showCorrectAnswer">Показать ответ</button>
+
+
         <div class="row">
             <div class="col-xs-4">
                 <a href = "../courseMap/courseMap.html">
@@ -29,5 +44,6 @@
                     <img src="../../../img/forth.png" width = "30" style = "margin-left: 10px">
                 </a>
             </div>
+        </div>
     </body>
 </html>

@@ -1,6 +1,7 @@
 main.loadScript("../../../js/services/ExerciseService.js");
 function LessonRender () {
     this.renderLesson = function () {
+        var exerciseService = new ExerciseService();
         lessonCourse = exerciseService.getExercise();
         testCourse = exerciseService.getExercise();
         var bodyDiv = document.getElementById('bodyOfPage');
