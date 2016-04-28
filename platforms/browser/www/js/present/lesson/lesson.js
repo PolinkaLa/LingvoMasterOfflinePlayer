@@ -1,8 +1,8 @@
 main.loadScript("../../../js/services/ExerciseService.js");
-main.loadScript("../../../js/present/lesson/lunckentextRun.js");
-main.loadScript("../../../js/present/lesson/multiplechoiceRun.js");
+main.loadScript("../../../js/present/exRun/lunckentextRun.js");
+main.loadScript("../../../js/present/exRun/multiplechoiceRun.js");
 main.loadScript("../../../js/util/jsoncmp.js");
-main.loadScript("../../../js/present/lesson/exerciseRun.js");
+main.loadScript("../../../js/present/exRun/exerciseRun.js");
 
 function LessonRender () {
     this.renderLesson = function () {
