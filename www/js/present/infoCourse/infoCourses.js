@@ -1,4 +1,7 @@
+main.loadScript("../../../lib/device.min.js");
 main.loadScript("../../../js/services/CourseService.js");
+main.loadScript("../../../js/services/LoadService.js");
+
 function InfoRender () {
     this.renderInfo = function () {
         var infoCourse = courseService.getInfoCourses();
@@ -26,4 +29,8 @@ window.onload = function () {
     infoRender.renderInfo();
     var menuRender = new MenuRender();
     menuRender.renderMenu("Информация");
+    var btn = document.getElementById('download_btn');
+    btn.onclick = function() {
+        loadService.download('https://www.dropbox.com/s/kgwe1c3ng9m57nq/course.lar?dl=0')
+    } 
 }

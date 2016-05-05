@@ -1,4 +1,5 @@
 main.loadScript("../../../js/services/CourseService.js");
+
 function MapRender () {
     this.renderMap = function () {
         var info = courseService.getInfoCourses();

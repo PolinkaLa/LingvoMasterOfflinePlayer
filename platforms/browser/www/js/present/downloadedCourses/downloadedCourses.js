@@ -1,4 +1,6 @@
 main.loadScript("../../../js/services/CourseService.js");
+
+
 function DownloadedRender() {
     this.renderDownloaded = function () {
         var course = courseService.getDownloadedCoursesList();
@@ -16,5 +18,6 @@ window.onload = function () {
     var downloadedRender = new DownloadedRender();
     downloadedRender.renderDownloaded();
     var menuRender = new MenuRender();
-    menuRender.renderMenu("Загруженные курсы"); 
+    menuRender.renderMenu("Загруженные курсы");
+     
 }
