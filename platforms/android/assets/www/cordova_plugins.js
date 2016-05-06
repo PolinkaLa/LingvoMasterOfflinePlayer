@@ -194,6 +194,47 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
+        "pluginId": "cordova-plugin-network-information",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
+        "pluginId": "cordova-plugin-network-information",
+        "clobbers": [
+            "Connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-zip/zip.js",
+        "id": "cordova-plugin-zip.Zip",
+        "pluginId": "cordova-plugin-zip",
+        "clobbers": [
+            "zip"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-fastrde-md5/www/md5chksum.js",
+        "id": "cordova-plugin-fastrde-md5.md5chksum",
+        "pluginId": "cordova-plugin-fastrde-md5",
+        "clobbers": [
+            "md5chksum"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-fastrde-downloader/www/downloader.min.js",
+        "id": "cordova-plugin-fastrde-downloader.downloader",
+        "pluginId": "cordova-plugin-fastrde-downloader",
+        "clobbers": [
+            "downloader"
+        ]
     }
 ];
 module.exports.metadata = 

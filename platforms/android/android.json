@@ -19,6 +19,20 @@
                         {
                             "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"md5chksum\"><param name=\"android-package\" value=\"de.fastr.phonegap.plugins.md5chksum\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"Zip\"><param name=\"android-package\" value=\"org.apache.cordova.Zip\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -29,6 +43,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -43,6 +61,18 @@
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-fastrde-md5": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-fastrde-downloader": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
@@ -241,6 +271,47 @@
             "pluginId": "cordova-plugin-file-transfer",
             "clobbers": [
                 "window.FileTransfer"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-zip/zip.js",
+            "id": "cordova-plugin-zip.Zip",
+            "pluginId": "cordova-plugin-zip",
+            "clobbers": [
+                "zip"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-fastrde-md5/www/md5chksum.js",
+            "id": "cordova-plugin-fastrde-md5.md5chksum",
+            "pluginId": "cordova-plugin-fastrde-md5",
+            "clobbers": [
+                "md5chksum"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-fastrde-downloader/www/downloader.min.js",
+            "id": "cordova-plugin-fastrde-downloader.downloader",
+            "pluginId": "cordova-plugin-fastrde-downloader",
+            "clobbers": [
+                "downloader"
             ]
         }
     ]
