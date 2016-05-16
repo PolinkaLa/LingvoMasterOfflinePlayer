@@ -1,0 +1,28 @@
+<ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
+  <__cachedModel>false</__cachedModel>
+  <__new>false</__new>
+  <__uuid>ffdf3f0c-c23f-44f0-8644-8c1d41c77fee</__uuid>
+  <__originalUuid>ffdf3f0c-c23f-44f0-8644-8c1d41c77fee</__originalUuid>
+  <__exerciseId>9757</__exerciseId>
+  <__companyId>0</__companyId>
+  <__originalCompanyId>0</__originalCompanyId>
+  <__setOriginalCompanyId>false</__setOriginalCompanyId>
+  <__groupId>226733</__groupId>
+  <__originalGroupId>226733</__originalGroupId>
+  <__setOriginalGroupId>false</__setOriginalGroupId>
+  <__userId>21731</__userId>
+  <__userUuid>7913d950-6245-4662-b242-22437797a6fe</__userUuid>
+  <__userName>christine</__userName>
+  <__createDate>2016-01-03 14:32:19.0 UTC</__createDate>
+  <__modifiedDate>2016-01-03 14:32:19.0 UTC</__modifiedDate>
+  <__exerciseTypeId>2</__exerciseTypeId>
+  <__title>Relationships listening</__title>
+  <__description></__description>
+  <__data>{&quot;1&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Check the &lt;a href=\&quot;https://lingvomaster.org/web/english-a2/shopping-vocabulary\&quot;&gt;vocabulary page&lt;/a&gt; first.&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=\&quot;font-weight: inherit;\&quot;&gt;What does Maria think about long distance relationships?&lt;/span&gt;&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;193&quot;:&quot;&lt;p&gt;She thinks it&amp;#39;s not good&lt;/p&gt;\n&quot;,&quot;357&quot;:&quot;&lt;p&gt;She thinks it&amp;#39;s not bad&lt;/p&gt;\n&quot;,&quot;893&quot;:&quot;&lt;p&gt;She thinks it&amp;#39;s good&lt;/p&gt;\n&quot;}},&quot;2&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Why did&amp;nbsp;her last two relationships end?&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;180&quot;:&quot;&lt;p&gt;Because she was in Denmark&lt;/p&gt;\n&quot;,&quot;306&quot;:&quot;&lt;p&gt;Because she didn&amp;#39;t love her boyfriend&lt;/p&gt;\n&quot;,&quot;931&quot;:&quot;&lt;p&gt;Because she was travelling&lt;/p&gt;\n&quot;}},&quot;3&quot;:{&quot;question&quot;:&quot;&lt;p&gt;What&amp;#39;s the main problem with long distance relationships?&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;208&quot;:&quot;&lt;p&gt;You cannot kiss the camera&lt;/p&gt;\n&quot;,&quot;415&quot;:&quot;&lt;p&gt;You can have conversations on the phone and internet&lt;/p&gt;\n&quot;,&quot;799&quot;:&quot;&lt;p&gt;You cannot see each other in the eye&lt;/p&gt;\n&quot;}},&quot;4&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Is Skype enough for Alex?&amp;nbsp;&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;545&quot;:&quot;&lt;p&gt;Yes, it is.&lt;/p&gt;\n&quot;,&quot;922&quot;:&quot;&lt;p&gt;No, it&amp;#39;s not.&lt;/p&gt;\n&quot;,&quot;940&quot;:&quot;&lt;p&gt;Doesn&amp;#39;t say.&lt;/p&gt;\n&quot;}}}</__data>
+  <__correctAnswer>{&quot;1&quot;:[193],&quot;2&quot;:[931],&quot;3&quot;:[799],&quot;4&quot;:[922]}</__correctAnswer>
+  <__minPassResult>60.0</__minPassResult>
+  <__active>true</__active>
+  <__originalActive>true</__originalActive>
+  <__setOriginalActive>false</__setOriginalActive>
+  <__columnBitmask>0</__columnBitmask>
+</ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>

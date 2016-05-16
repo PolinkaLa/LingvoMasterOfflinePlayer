@@ -1,0 +1,28 @@
+<ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
+  <__cachedModel>false</__cachedModel>
+  <__new>false</__new>
+  <__uuid>7baac88f-fcc5-48c1-8f54-b0dba4401988</__uuid>
+  <__originalUuid>7baac88f-fcc5-48c1-8f54-b0dba4401988</__originalUuid>
+  <__exerciseId>9908</__exerciseId>
+  <__companyId>0</__companyId>
+  <__originalCompanyId>0</__originalCompanyId>
+  <__setOriginalCompanyId>false</__setOriginalCompanyId>
+  <__groupId>226733</__groupId>
+  <__originalGroupId>226733</__originalGroupId>
+  <__setOriginalGroupId>false</__setOriginalGroupId>
+  <__userId>21731</__userId>
+  <__userUuid>7913d950-6245-4662-b242-22437797a6fe</__userUuid>
+  <__userName>christine</__userName>
+  <__createDate>2016-01-05 13:02:15.0 UTC</__createDate>
+  <__modifiedDate>2016-01-05 13:02:15.0 UTC</__modifiedDate>
+  <__exerciseTypeId>2</__exerciseTypeId>
+  <__title>Shoppng multiple choice</__title>
+  <__description></__description>
+  <__data>{&quot;1&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Watch the video and answer the questions.&lt;/p&gt;\n\n&lt;p&gt;&lt;iframe allowfullscreen=\&quot;\&quot; frameborder=\&quot;0\&quot; height=\&quot;360\&quot; src=\&quot;//www.youtube.com/embed/bGeNGLEdTOs\&quot; style=\&quot;maxWidth:100%;max-width:100%\&quot; width=\&quot;640\&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;\n\n&lt;p&gt;When is &amp;quot;Black Friday&amp;quot;?&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;395&quot;:&quot;&lt;p&gt;The day after Thanksgiving&lt;/p&gt;\n&quot;,&quot;525&quot;:&quot;&lt;p&gt;The day after Christmas&lt;/p&gt;\n&quot;,&quot;689&quot;:&quot;&lt;p&gt;The first day of the year&lt;/p&gt;\n&quot;}},&quot;2&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Black Friday has &amp;quot;unofficial&amp;quot; name. What is it?&amp;nbsp;&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;128&quot;:&quot;&lt;p&gt;start of the holidays shopping season&lt;/p&gt;\n&quot;,&quot;642&quot;:&quot;&lt;p&gt;advertising&lt;/p&gt;\n&quot;,&quot;658&quot;:&quot;&lt;p&gt;some kind of sales&lt;/p&gt;\n&quot;}},&quot;3&quot;:{&quot;question&quot;:&quot;&lt;p&gt;What&amp;nbsp;other day is mentioned?&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;143&quot;:&quot;&lt;p&gt;Cyber Monday&lt;/p&gt;\n&quot;,&quot;204&quot;:&quot;&lt;p&gt;Cyber Tuesday&lt;/p&gt;\n&quot;,&quot;254&quot;:&quot;&lt;p&gt;Cyber Sunday&lt;/p&gt;\n&quot;}},&quot;4&quot;:{&quot;question&quot;:&quot;&lt;p&gt;Black Friday is good for shops, but what days are even better?&lt;/p&gt;\n&quot;,&quot;answers&quot;:{&quot;67&quot;:&quot;&lt;p&gt;day after Black Friday&lt;/p&gt;\n&quot;,&quot;87&quot;:&quot;&lt;p&gt;Christmas&lt;/p&gt;\n&quot;,&quot;897&quot;:&quot;&lt;p&gt;three days before Christmas&lt;/p&gt;\n&quot;}}}</__data>
+  <__correctAnswer>{&quot;1&quot;:[395],&quot;2&quot;:[128],&quot;3&quot;:[143],&quot;4&quot;:[897]}</__correctAnswer>
+  <__minPassResult>60.0</__minPassResult>
+  <__active>true</__active>
+  <__originalActive>true</__originalActive>
+  <__setOriginalActive>false</__setOriginalActive>
+  <__columnBitmask>0</__columnBitmask>
+</ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>

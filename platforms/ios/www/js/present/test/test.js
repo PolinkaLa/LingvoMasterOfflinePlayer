@@ -1,3 +1,4 @@
+main.loadScript("../../../js/dal/DbAccess.js")
 main.loadScript("../../../js/services/ExerciseService.js");
 main.loadScript("../../../js/present/exRun/lunckentextRun.js");
 main.loadScript("../../../js/present/exRun/multiplechoiceRun.js");
@@ -9,8 +10,7 @@ function TestRender () {
 
         var exerciseContainer = 'exerciseContainer';
         var titleContainer = 'titleContainer';
-
-        var exercise = exerciseService.getExercise(2);
+        var exercise = exerciseService.getExercise('9105');
         var title = exercise.title;
         var exerciseTypeId = exercise.exerciseTypeId;
         var data = exercise.data;

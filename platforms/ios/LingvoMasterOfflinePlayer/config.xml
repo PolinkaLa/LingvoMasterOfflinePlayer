@@ -25,11 +25,11 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
-    <feature name="Zip">
-        <param name="ios-package" value="ZipPlugin" />
-    </feature>
     <feature name="md5chksum">
         <param name="ios-package" value="md5chksum" />
+    </feature>
+    <feature name="Zip">
+        <param name="ios-package" value="ZipPlugin" />
     </feature>
     <name>LingvoMasterOfflinePlayer</name>
     <description>

@@ -1,0 +1,60 @@
+<ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
+  <__cachedModel>false</__cachedModel>
+  <__new>false</__new>
+  <__uuid>61f091dc-8fad-499c-908d-15aa013ced9d</__uuid>
+  <__originalUuid>61f091dc-8fad-499c-908d-15aa013ced9d</__originalUuid>
+  <__exerciseId>9764</__exerciseId>
+  <__companyId>0</__companyId>
+  <__originalCompanyId>0</__originalCompanyId>
+  <__setOriginalCompanyId>false</__setOriginalCompanyId>
+  <__groupId>226733</__groupId>
+  <__originalGroupId>226733</__originalGroupId>
+  <__setOriginalGroupId>false</__setOriginalGroupId>
+  <__userId>21731</__userId>
+  <__userUuid>7913d950-6245-4662-b242-22437797a6fe</__userUuid>
+  <__userName>christine</__userName>
+  <__createDate>2016-01-03 16:43:45.0 UTC</__createDate>
+  <__modifiedDate>2016-01-03 16:43:45.0 UTC</__modifiedDate>
+  <__exerciseTypeId>1</__exerciseTypeId>
+  <__title>state verbs gaps</__title>
+  <__description></__description>
+  <__data>&lt;p&gt;Fill the gaps with -ing form. Use the present simple form for state verbs.&lt;/p&gt;
+
+&lt;p&gt;have - &lt;input class=&quot;lucken&quot; luckenid=&quot;1&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;see - &lt;input class=&quot;lucken&quot; luckenid=&quot;2&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;love - &lt;input class=&quot;lucken&quot; luckenid=&quot;3&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;work - &lt;input class=&quot;lucken&quot; luckenid=&quot;4&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;do - &lt;input class=&quot;lucken&quot; luckenid=&quot;5&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;watch - &lt;input class=&quot;lucken&quot; luckenid=&quot;6&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;be - &lt;input class=&quot;lucken&quot; luckenid=&quot;7&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;need - &lt;input class=&quot;lucken&quot; luckenid=&quot;8&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;like - &lt;input class=&quot;lucken&quot; luckenid=&quot;9&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;believe - &lt;input class=&quot;lucken&quot; luckenid=&quot;10&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;listen - &lt;input class=&quot;lucken&quot; luckenid=&quot;11&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;wear - &lt;input class=&quot;lucken&quot; luckenid=&quot;12&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;mean - &lt;input class=&quot;lucken&quot; luckenid=&quot;13&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;read - &lt;input class=&quot;lucken&quot; luckenid=&quot;14&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;understand - &lt;input class=&quot;lucken&quot; luckenid=&quot;15&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</__data>
+  <__correctAnswer>{&quot;1&quot;:[&quot;having&quot;],&quot;2&quot;:[&quot;see&quot;],&quot;3&quot;:[&quot;love&quot;],&quot;4&quot;:[&quot;working&quot;],&quot;5&quot;:[&quot;doing&quot;],&quot;6&quot;:[&quot;watching&quot;],&quot;7&quot;:[&quot;being&quot;],&quot;8&quot;:[&quot;need&quot;],&quot;9&quot;:[&quot;like&quot;],&quot;10&quot;:[&quot;believe&quot;],&quot;11&quot;:[&quot;listening&quot;],&quot;12&quot;:[&quot;wearing&quot;],&quot;13&quot;:[&quot;mean&quot;],&quot;14&quot;:[&quot;reading\n\n&quot;],&quot;15&quot;:[&quot;understand&quot;]}</__correctAnswer>
+  <__minPassResult>60.0</__minPassResult>
+  <__active>true</__active>
+  <__originalActive>true</__originalActive>
+  <__setOriginalActive>false</__setOriginalActive>
+  <__columnBitmask>0</__columnBitmask>
+</ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
