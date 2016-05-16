@@ -1,6 +1,6 @@
 main.loadScript("../../../js/dal/DbAccess.js")
 main.loadScript("../../../js/services/CourseService.js");
-main.loadScript("../../../js/services/XmlParseService.js")
+main.loadScript("../../../js/services/XmlConvertService.js")
 
 function MapRender () {
     this.renderMap = function () {
@@ -24,5 +24,5 @@ window.onload = function () {
     mapRender.renderMap();
     var menuRender = new MenuRender();
     menuRender.renderMenu("Содержание");
-    xmlParseService.processXML("../../../test_data/9105.xml")
+    xmlConvertService.processXML("../../../test_data/9764.xml")
 }

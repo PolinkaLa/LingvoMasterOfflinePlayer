@@ -10,21 +10,15 @@ function TestRender () {
 
         var exerciseContainer = 'exerciseContainer';
         var titleContainer = 'titleContainer';
-        var exercise;
-        setTimeout(function() {
-            exercise = exerciseService.getExercise('9105');
-            setTimeout(function() {
-            var title = exercise.title;
-            var exerciseTypeId = exercise.exerciseTypeId;
-            var data = exercise.data;
-            var correctAnswer = exercise.correctAnswer;
+        var exercise = exerciseService.getExercise('9105');
+        var title = exercise.title;
+        var exerciseTypeId = exercise.exerciseTypeId;
+        var data = exercise.data;
+        var correctAnswer = exercise.correctAnswer;
 
-            var exerciseRun = new ExerciseRunPortlet('', titleContainer, exerciseContainer, title,
-                exerciseTypeId, data, correctAnswer, false,
-                "Упражнение пройдено успешно", "Что-то пошло не так, попробуйде снова");
-        }, 0)
-        }, 0);
-        
+        var exerciseRun = new ExerciseRunPortlet('', titleContainer, exerciseContainer, title,
+            exerciseTypeId, data, correctAnswer, false,
+            "Упражнение пройдено успешно", "Что-то пошло не так, попробуйде снова");
     }
 };
 

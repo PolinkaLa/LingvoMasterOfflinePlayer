@@ -1,5 +1,5 @@
 projectKey=runner
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/runner
-ceTaskId=AVSFh8ddNS-YTGk04E0D
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVSFh8ddNS-YTGk04E0D
+ceTaskId=AVSo8-KISx9glzT7-eto
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVSo8-KISx9glzT7-eto

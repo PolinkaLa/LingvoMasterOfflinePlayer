@@ -35,7 +35,7 @@ function LessonRender () {
         for (var i = 1; i <= testCourse; i++) {
             tests = tests + renderTemplate(testBlock, {link: "../test/test.html", test: "Test "+ i});
         }
-        testsDiv.innerHTML =tests;
+        testsDiv.innerHTML = tests;
     }
 };
 
@@ -43,5 +43,5 @@ window.onload = function () {
     var lessonRender = new LessonRender();
     lessonRender.renderLesson();
     var menuRender = new MenuRender();
-    menuRender.renderMenu("Урок");
+    menuRender.renderMenu("Lesson 1");
 }

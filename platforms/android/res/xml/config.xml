@@ -15,11 +15,11 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
-    <feature name="Zip">
-        <param name="android-package" value="org.apache.cordova.Zip" />
-    </feature>
     <feature name="md5chksum">
         <param name="android-package" value="de.fastr.phonegap.plugins.md5chksum" />
+    </feature>
+    <feature name="Zip">
+        <param name="android-package" value="org.apache.cordova.Zip" />
     </feature>
     <allow-intent href="market:*" />
     <name>LingvoMasterOfflinePlayer</name>

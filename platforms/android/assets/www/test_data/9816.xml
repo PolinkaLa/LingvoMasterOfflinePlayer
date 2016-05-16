@@ -1,0 +1,56 @@
+<ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
+  <__cachedModel>false</__cachedModel>
+  <__new>false</__new>
+  <__uuid>4c746714-2085-466d-9159-cfab2a5e4def</__uuid>
+  <__originalUuid>4c746714-2085-466d-9159-cfab2a5e4def</__originalUuid>
+  <__exerciseId>9816</__exerciseId>
+  <__companyId>0</__companyId>
+  <__originalCompanyId>0</__originalCompanyId>
+  <__setOriginalCompanyId>false</__setOriginalCompanyId>
+  <__groupId>226733</__groupId>
+  <__originalGroupId>226733</__originalGroupId>
+  <__setOriginalGroupId>false</__setOriginalGroupId>
+  <__userId>21731</__userId>
+  <__userUuid>7913d950-6245-4662-b242-22437797a6fe</__userUuid>
+  <__userName>christine</__userName>
+  <__createDate>2016-01-04 18:40:20.0 UTC</__createDate>
+  <__modifiedDate>2016-01-04 18:40:20.0 UTC</__modifiedDate>
+  <__exerciseTypeId>1</__exerciseTypeId>
+  <__title>Reading 13</__title>
+  <__description></__description>
+  <__data>&lt;h3 style=&quot;color: rgb(255, 144, 0); font-size: 22.44px; font-family: Verdana, Geneva, sans-serif;&quot;&gt;&lt;span style=&quot;color:#800080;&quot;&gt;Read the text and fill the gaps using pictures&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 style=&quot;color: rgb(255, 144, 0); font-size: 22.44px; font-family: Verdana, Geneva, sans-serif;&quot;&gt;&lt;span style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96);&quot;&gt;Come and sail on a Crystal Cruise &lt;/span&gt;&lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260899.xml$]&quot; style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96); width: 50px; max-width: 100%;&quot;&gt;&lt;span style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;input class=&quot;lucken&quot; luckenid=&quot;1&quot;&gt;&lt;span style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96);&quot;&gt;. We have three &lt;/span&gt;&lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260899.xml$]&quot; style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96); width: 50px; max-width: 100%;&quot;&gt;&lt;input class=&quot;lucken&quot; luckenid=&quot;2&quot;&gt;&lt;span style=&quot;font-size: 17.952px; font-weight: inherit; line-height: 1.8em; color: rgb(75, 87, 96);&quot;&gt;: The Crystal Queen, The Crystal Princess, The Crystal Palace.&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;Come and sail in luxury on cruises around the Caribbean &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260914.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;3&quot;&gt; for 7 or 14 days.&lt;/p&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;Our seven-day &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260929.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;4&quot;&gt; costs $2000 and our two-week &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260929.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;5&quot;&gt;is $3500.&lt;/p&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;A typical one week cruise&lt;/p&gt;
+
+&lt;ul style=&quot;line-height: 2.4em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;
+	&lt;li&gt;Day One - &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260944.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;6&quot;&gt; from Miami&lt;/li&gt;
+	&lt;li&gt;Day Two - free day in Nassau, in The Bahamas&lt;/li&gt;
+	&lt;li&gt;Day Three - near Haiti&lt;/li&gt;
+	&lt;li&gt;Day Four - visit Puerto Rico and Antigua&lt;/li&gt;
+	&lt;li&gt;Day Five - free day in Barbados&lt;/li&gt;
+	&lt;li&gt;Day Six - free day in Port of Spain, Trinidad&lt;/li&gt;
+	&lt;li&gt;Day Seven - travel to Caracas, Venezuela&lt;/li&gt;
+	&lt;li&gt;Day Eight - &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260959.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;7&quot;&gt; home.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;All &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260974.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;8&quot;&gt; and &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/260989.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;9&quot;&gt; is included in the price of your cruise (except for alcoholic drinks). Our cruise ships all have a &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/261004.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;10&quot;&gt;, a &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/261019.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&lt;input class=&quot;lucken&quot; luckenid=&quot;11&quot;&gt;, a five-star &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/228811.xml$]&quot; style=&quot;width: 55px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;12&quot;&gt;, a &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/261034.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;13&quot;&gt;, a &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/261049.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&lt;input class=&quot;lucken&quot; luckenid=&quot;14&quot;&gt; and a fully equipped &lt;img alt=&quot;&quot; src=&quot;[$dl-reference=/group/226733/com.liferay.portlet.documentlibrary.model.DLFileEntry/261064.xml$]&quot; style=&quot;width: 50px; max-width: 100%;&quot;&gt;&amp;nbsp;&lt;input class=&quot;lucken&quot; luckenid=&quot;15&quot;&gt;.&lt;/p&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;If you prefer to go on a cruise in another part of the world, we also organize cruises in the Baltic Sea and the Mediterranean.&lt;/p&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;Our ships carry over 2000 passengers and we have nearly 600 crew members.&lt;/p&gt;
+
+&lt;p style=&quot;line-height: 1.8em; font-family: Verdana, Geneva, sans-serif; font-size: 17.952px;&quot;&gt;So come on board today for the holiday of a lifetime!&lt;br&gt;
+Call immediately: 020-4455832&lt;/p&gt;</__data>
+  <__correctAnswer>{&quot;1&quot;:[&quot;ship&quot;],&quot;2&quot;:[&quot;ships&quot;],&quot;3&quot;:[&quot;Sea&quot;],&quot;4&quot;:[&quot;cruise&quot;],&quot;5&quot;:[&quot;cruise &quot;],&quot;6&quot;:[&quot;departure&quot;],&quot;7&quot;:[&quot;fly&quot;],&quot;8&quot;:[&quot;food&quot;],&quot;9&quot;:[&quot;drink&quot;],&quot;10&quot;:[&quot;casino&quot;],&quot;11&quot;:[&quot;cinema&quot;],&quot;12&quot;:[&quot;restaurant&quot;],&quot;13&quot;:[&quot;theatre&quot;],&quot;14&quot;:[&quot;library&quot;],&quot;15&quot;:[&quot;gym&quot;]}</__correctAnswer>
+  <__minPassResult>60.0</__minPassResult>
+  <__active>true</__active>
+  <__originalActive>true</__originalActive>
+  <__setOriginalActive>false</__setOriginalActive>
+  <__columnBitmask>0</__columnBitmask>
+</ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>

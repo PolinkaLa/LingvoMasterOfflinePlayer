@@ -1,0 +1,42 @@
+<ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>
+  <__cachedModel>false</__cachedModel>
+  <__new>false</__new>
+  <__uuid>eaefdfaa-1be2-4842-92fd-2b363fd64943</__uuid>
+  <__originalUuid>eaefdfaa-1be2-4842-92fd-2b363fd64943</__originalUuid>
+  <__exerciseId>9770</__exerciseId>
+  <__companyId>0</__companyId>
+  <__originalCompanyId>0</__originalCompanyId>
+  <__setOriginalCompanyId>false</__setOriginalCompanyId>
+  <__groupId>226733</__groupId>
+  <__originalGroupId>226733</__originalGroupId>
+  <__setOriginalGroupId>false</__setOriginalGroupId>
+  <__userId>21731</__userId>
+  <__userUuid>7913d950-6245-4662-b242-22437797a6fe</__userUuid>
+  <__userName>christine</__userName>
+  <__createDate>2016-01-03 18:09:09.0 UTC</__createDate>
+  <__modifiedDate>2016-01-03 18:09:09.0 UTC</__modifiedDate>
+  <__exerciseTypeId>1</__exerciseTypeId>
+  <__title>Eating out gaps</__title>
+  <__description></__description>
+  <__data>&lt;p&gt;Read the text about people went eating out then fill the gaps with numbers.&lt;/p&gt;
+
+&lt;p&gt;The person ate fast food - &lt;input class=&quot;lucken&quot; luckenid=&quot;6&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The person ate a very hot dish - &lt;input class=&quot;lucken&quot; luckenid=&quot;5&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The person talks about restraurant atmosphere - &lt;input class=&quot;lucken&quot; luckenid=&quot;4&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The person went for a special occasion - &lt;input class=&quot;lucken&quot; luckenid=&quot;3&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The person ate seafood - &lt;input class=&quot;lucken&quot; luckenid=&quot;2&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The reastaurant was cheap - &lt;input class=&quot;lucken&quot; luckenid=&quot;1&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</__data>
+  <__correctAnswer>{&quot;1&quot;:[&quot;2&quot;],&quot;2&quot;:[&quot;1&quot;],&quot;3&quot;:[&quot;1&quot;],&quot;4&quot;:[&quot;3&quot;],&quot;5&quot;:[&quot;3&quot;],&quot;6&quot;:[&quot;2&quot;]}</__correctAnswer>
+  <__minPassResult>60.0</__minPassResult>
+  <__active>true</__active>
+  <__originalActive>true</__originalActive>
+  <__setOriginalActive>false</__setOriginalActive>
+  <__columnBitmask>0</__columnBitmask>
+</ru.softwerke.itdeutsch.srv.model.impl.ExerciseImpl>

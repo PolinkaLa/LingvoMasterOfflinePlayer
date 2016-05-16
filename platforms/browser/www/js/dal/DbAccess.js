@@ -20,10 +20,9 @@ function DbAccess () {
 			db = event.target.result;
 			alert("success")
 			if (option === 'write') {
-				this.write(param)
+				write(param)
 			} else if (option === 'read') {
-				var result = read(param)
-				return result
+				read(param)
 			}
 		};
 		request.onupgradeneeded = function(event) {
@@ -36,7 +35,7 @@ function DbAccess () {
 		};
 	}
 
-	this.write = function(exObject) {
+	write = function(exObject) {
 		var transaction = db.transaction(["exercise"], "readwrite");
 		var objectStore = transaction.objectStore("exercise");
 		objectStore.add(exObject, exObject.exerciseId);		
