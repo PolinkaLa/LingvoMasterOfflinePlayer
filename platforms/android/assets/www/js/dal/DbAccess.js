@@ -1,13 +1,6 @@
 function DbAccess () {
-	var bd;
-
-	/**
-	 * [open description]
-	 * @param  {string} option - "write" or "read" 
-	 * @param  {number} or {object} param - if option "write" param is object to write in DB
-	 *                     					if option "read" param is ID to read from DB
-	 */
-	this.open = function(option, param) {
+	var db;
+	this.open = function() {
 		var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
 		if (!indexedDB) {
 			alert("Такие-то функции будут недоступны");
@@ -18,16 +11,11 @@ function DbAccess () {
 		};
 		request.onsuccess = function(event) {
 			db = event.target.result;
-			alert("success")
-			if (option === 'write') {
-				write(param)
-			} else if (option === 'read') {
-				read(param)
-			}
+			//alert("success")
 		};
 		request.onupgradeneeded = function(event) {
 			db = event.target.result;
-			alert("updrade")
+			//alert("upgrade")
 			var exerciseStore = db.createObjectStore("exercise");
 			var courseStore = db.createObjectStore("course");
 			exerciseStore.createIndex("exerciseId", "exerciseId", { unique: true });
@@ -35,22 +23,26 @@ function DbAccess () {
 		};
 	}
 
-	write = function(exObject) {
-		var transaction = db.transaction(["exercise"], "readwrite");
-		var objectStore = transaction.objectStore("exercise");
-		objectStore.add(exObject, exObject.exerciseId);		
+	this.write = function(table, id, object) {
+		var transaction = db.transaction([table], "readwrite");
+		var objectStore = transaction.objectStore(table);
+		objectStore.add(object, id);		
 	}
 
-	function read(exId) {
-		var transaction = db.transaction(["exercise"]);
-		var objectStore = transaction.objectStore("exercise");
-		var request = objectStore.get(exId);
+	this.read = function(table, id, successCallback) {
+		var resultTransaction;
+		var transaction = db.transaction([table]);
+		var objectStore = transaction.objectStore(table);
+		var request = objectStore.get(id);
+		//alert("in read");
+		successCallback(resultTransaction);
 		request.onerror = function(event) {
 			alert("что-то пошло не так")
 		};
 		request.onsuccess = function(event) {
-			res = request.result
-			return res;
+			resultTransaction = request.result
+			alert("get result");
+			alert(resultTransaction.title);
 		};
 		//alert(request.result.title)
 		//return request.result;
@@ -58,3 +50,4 @@ function DbAccess () {
 }
 
 var bdAccess = new DbAccess();
+bdAccess.open();

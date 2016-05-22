@@ -27,5 +27,8 @@ window.onload = function () {
     testRender.renderTest();
     var menuRender = new MenuRender();
     menuRender.renderMenu("Тест");
+    document.getElementById("stop").onclick = function () {
+        alert('Вы уверены?')
+    }
 };
 

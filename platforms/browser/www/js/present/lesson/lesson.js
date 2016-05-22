@@ -7,8 +7,10 @@ main.loadScript("../../../js/present/exRun/exerciseRun.js");
 function LessonRender () {
     this.renderLesson = function () {
 
-        lessonCourse = exerciseService.getExercisesList();
-        testCourse = lessonCourse.length;
+        this.lessonId = sessionStorage.getItem("lessonId");
+        var lesId = sessionStorage.getItem("lessonId");
+        lessonCourse = exerciseService.getExercisesList(lesId);
+        testCourse = exerciseService.getListTest(lesId);
 
         var exerciseDiv = document.getElementById('exercises');
         var exerciseTemplate = getTemplate("exerciseTmpl.html");
@@ -43,5 +45,5 @@ window.onload = function () {
     var lessonRender = new LessonRender();
     lessonRender.renderLesson();
     var menuRender = new MenuRender();
-    menuRender.renderMenu("Lesson 1");
+    menuRender.renderMenu("Lesson " + lessonRender.lessonId);
 }

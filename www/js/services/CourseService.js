@@ -7,17 +7,9 @@ function CourseService () {
 	 */
 	this.getUserCoursesList = function(userLogin) {
 		var userCoursesList = [
-			{	name: "Course 1",
-            	author: "Author Author",
-            	img: "../../../test_data/1.png"
-            },
-            {	name: "Course 2",
-                author: "Author Author",
-                img: "../../../test_data/2.jpg"
-            },
-            {	name: "Course 3",
-                author: "Author Author",
-                img: "../../../test_data/3.jpg"
+			{	name: "English A2",
+            	author: "Кристина Матвеева",
+                img: "../../../test_data/layout_set_logo.jpg"
             }
 		];
 		return userCoursesList;
@@ -30,17 +22,9 @@ function CourseService () {
 	 */
 	this.getDownloadedCoursesList = function(userLogin) {
 		var downloadedCoursesList = [
-			{	name: "Course 1",
-            	author: "Author Author",
-                img: "../../../test_data/1.png"
-            },
-            {	name: "Course 2",
-                author: "Author Author",
-                img: "../../../test_data/2.jpg"
-            },
-            {	name: "Course 3",
-            	author: "Author Author",
-                img: "../../../test_data/3.jpg"
+            {	name: "English A2",
+            	author: "Кристина Матвеева",
+                img: "../../../test_data/layout_set_logo.jpg"
             }
 		];
 		return downloadedCoursesList;
@@ -63,37 +47,16 @@ function CourseService () {
 	 */
 	this.getInfoCourses = function(idCourse) {
 		var information = {
-			img: "../../../test_data/1.png",
-			name: "Course",
-			author: "Author Author",
-            annatation: "This course is designed for beginners to learn English.",
-            about: "A detailed course description is missing",
-            lesson: ["Lesson 1", "Lesson 2", "Lesson 3", "Lesson 4", "Lesson 5"],
-            test: ["Test 1", "Test 2", "Test 3"]
+			img: "../../../test_data/layout_set_logo.jpg",
+			name: "English A2",
+			author: "Кристина Матвеева",
+            annatation: "English language course covering A2 (Elementary - Pre-Intermediate) level CEFR.",
+            about: "",
+            lesson: ["Lesson 1", "Lesson 2"],
+            test: ["Test 1"]
 		}
 		return information;
 	}
 };
 
 var courseService = new CourseService();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
